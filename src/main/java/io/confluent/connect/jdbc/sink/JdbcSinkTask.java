@@ -24,6 +24,8 @@ import org.apache.kafka.connect.sink.SinkRecord;
 import org.apache.kafka.connect.sink.SinkTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+// import org.apache.kafka.connect.data.Schema;
+// import org.apache.kafka.connect.data.SchemaBuilder;
 
 import java.sql.SQLException;
 import java.util.Collection;
@@ -80,6 +82,20 @@ public class JdbcSinkTask extends SinkTask {
         + "database...",
         recordsCount, first.topic(), first.kafkaPartition(), first.kafkaOffset()
     );
+    log.debug("KeySchema: {}, object: {} ", first.keySchema(), first.key());
+    log.debug("ValueSchema: {}, object: {} ", first.valueSchema(), first.value());
+    // Schema convert2KeySchema = SchemaBuilder.struct()
+    //     .field("$oid", Schema.STRING_SCHEMA)
+    //     .build();
+    // Schema convert2ValueSchema = SchemaBuilder.struct()
+    //     .field("$oid", Schema.STRING_SCHEMA)
+    //     .field("t_json", Schema.STRING_SCHEMA)
+    //     .build();
+    // Struct keyObject = new Struct(convert2KeySchema).put("$oid", "this is test");
+    // Struct valueObject = new Struct(convert2KeySchema)
+    //     .put("$oid", "this is test")
+    //     .put("t_json", "{\"key\": \"value\"}");
+
     try {
       writer.write(records);
     } catch (TableAlterOrCreateException tace) {
