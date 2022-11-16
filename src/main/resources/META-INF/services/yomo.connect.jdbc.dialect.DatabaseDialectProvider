@@ -1,0 +1,11 @@
+yomo.connect.jdbc.dialect.GenericDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.Db2DatabaseDialect$Provider
+yomo.connect.jdbc.dialect.DerbyDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.OracleDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.SqliteDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.PostgreSqlDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.MySqlDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.SqlServerDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.SapHanaDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.SybaseDatabaseDialect$Provider
+yomo.connect.jdbc.dialect.VerticaDatabaseDialect$Provider
