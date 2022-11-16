@@ -23,16 +23,16 @@
         <version>6.0.0</version>
     </parent>
 
-    <groupId>io.confluent</groupId>
-    <artifactId>kafka-connect-jdbc</artifactId>
+    <groupId>yomo</groupId>
+    <artifactId>yomo-kafka-connect-jdbc</artifactId>
     <packaging>jar</packaging>
     <version>10.6.1-SNAPSHOT</version>
-    <name>kafka-connect-jdbc</name>
+    <name>yomo-kafka-connect-jdbc</name>
     <organization>
-        <name>Confluent, Inc.</name>
-        <url>http://confluent.io</url>
+        <name>Yomo</name>
+        <url>https://www.51yomo.net</url>
     </organization>
-    <url>http://confluent.io</url>
+    <url>https://www.51yomo.net</url>
     <description>
        A Kafka Connect JDBC connector for copying data between databases and Kafka.
     </description>
